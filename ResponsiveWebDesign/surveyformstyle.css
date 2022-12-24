@@ -19,7 +19,7 @@ form {
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
-    border: 3px solid yellow;
+    border: 1px solid yellow;
 }
 
 /* label {
@@ -39,7 +39,6 @@ input[type="number"], input[type="text"], input[type="email"] {
 }
 input[type="number"] {
     direction: rtl;
-    border: 3px solid yellow;
 }
 input[type="text"], input[type="email"] {
     width: 100%;

@@ -9,11 +9,11 @@
 </head>
 <body>
     <h1 id="title">Survey Form</h1>
-    <p id="description"></p>
+    <p id="description">This is a survey form for a survey that is being conducted</p>
     <form id="survey-form" method="get" action="">
-        <label id="name-label" for="name">Enter your name: <input id="name" name="name" type="text"></label>
-        <label id="email-label" for="email">Enter your email: <input id="email" name="email" type="email"></label>
-        <label id="number-label" for="number">Enter your age: </label><input id="number" name="number" type="number" min="13" max="120"><br>
+        <label id="name-label" for="name">Enter your name: <input id="name" name="name" type="text" placeholder="John Doe" required></label>
+        <label id="email-label" for="email">Enter your email: <input id="email" name="email" type="email" placeholder="exapmle@gmail.com" required></label>
+        <label id="number-label" for="number">Enter your age: </label><input id="number" name="number" type="number" placeholder="30" min="13" max="120"><br>
         <label for="dropdown"> Which service did you use? <br>
             <select id="dropdown" name="dropdown">
                 <option value="app">Mobile App</option>
@@ -24,11 +24,11 @@
         <br>
         <label for="radio1"><input type="radio" name="radio-option" id="radio1" value="Hi"> Hi There</label><br>
         <label for="radio2"><input type="radio" name="radio-option" id="radio2" value="How"> How are you?</label><br>
-        <label for="checkbox2"><input type="checkbox" name="checkbox" id="checkbox1"> check1</label><br>
-        <label for="checkbox1"><input type="checkbox" name="checkbox" id="checkbox2"> check2</label><br>
+        <label for="checkbox2"><input type="checkbox" name="checkbox" id="checkbox1" value="check1"> check1</label><br>
+        <label for="checkbox1"><input type="checkbox" name="checkbox" id="checkbox2" value="check2"> check2</label><br>
         <label for="comment-area">Any Suggestions/ Additional Feedback: </label>
         <textarea name="comments" id="comment-area">Feedback... </textarea>
-        <button type="submit">Submit</button>
+        <button id="submit" type="submit">Submit</button>
     </form>
 </body>
 </html>
