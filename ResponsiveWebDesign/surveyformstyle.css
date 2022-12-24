@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #28284e;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    border: 3px solid yellow;
+}
+
+/* label {
+    border: 3px solid yellow;
+} */
+input, textarea {
+    margin: 1em 0;
+}
+
+input {
+    border-style: none;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+}
+input[type="number"], input[type="text"], input[type="email"] {
+    height: 2em;
+}
+input[type="number"] {
+    direction: rtl;
+    border: 3px solid yellow;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+}
+
+input:focus {
+    background-color: rgb(119, 0, 255);
+    color: #f5f6f7;
+}
+
+#comment-area {
+    display: block;
+}
