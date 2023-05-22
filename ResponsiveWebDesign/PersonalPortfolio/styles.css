@@ -94,8 +94,49 @@ nav a:hover {
     text-align: center;
 }
 
+.btn-hover::before {
+    content: "</";
+    color: white;
+    margin-right: 1rem;
+    opacity: 0;
+    transition-property: opacity, color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+}
+
+.btn-hover:hover::before {
+    opacity: 1;
+    color: orange;
+}
+
+.btn-hover::after {
+    content: ">";
+    color: white;
+    opacity: 0;
+    margin-left: 1rem;
+    transition-property: opacity, color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+}
+
+.btn-hover:hover::after {
+    opacity: 1;
+    color: orange;
+}
+
 .projects-section {
     background: rgb(69, 86, 125);
+    padding: 10rem 0;
+}
+
+.project-heading {
+    display: block;
+    color: #f0f0f0;
+    font-size: 3.5rem;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-decoration: underline;
 }
 
 .projects {
@@ -138,7 +179,7 @@ nav a:hover {
         rgb(81, 88, 95) 0%,
         rgb(48, 56, 65)
     );
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     color: whitesmoke;
     display: flex;
